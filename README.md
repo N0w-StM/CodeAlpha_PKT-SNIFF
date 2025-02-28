@@ -30,5 +30,7 @@ pip install pyfiglet termcolor scapy
 ./sniff.py -i <interface> -f "<filter>"
 ```
 ## Arguments:
-### -i, --interface (required): The network interface to sniff on (e.g., eth0, wlan0, etc.).
-### -f, --filter (optional): A BPF (Berkeley Packet Filter) expression to filter the packets (e.g., tcp, udp, port 80, etc.).
+```text
+ -i, --interface (required): The network interface to sniff on (e.g., eth0, wlan0, etc.).
+ -f, --filter (optional): A BPF (Berkeley Packet Filter) expression to filter the packets (e.g., tcp, udp, port 80, etc.).
+```
