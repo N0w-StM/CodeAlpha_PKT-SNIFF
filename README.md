@@ -25,10 +25,10 @@ You can install the required dependencies using `pip`:
 ```bash
 pip install pyfiglet termcolor scapy
 ```
-#Usage:
+# Usage:
 ```bash
 ./sniff.py -i <interface> -f "<filter>"
 ```
-##Arguments:
-1- -i, --interface (required): The network interface to sniff on (e.g., eth0, wlan0, etc.).
-2- -f, --filter (optional): A BPF (Berkeley Packet Filter) expression to filter the packets (e.g., tcp, udp, port 80, etc.).
+## Arguments:
+### -i, --interface (required): The network interface to sniff on (e.g., eth0, wlan0, etc.).
+### -f, --filter (optional): A BPF (Berkeley Packet Filter) expression to filter the packets (e.g., tcp, udp, port 80, etc.).
