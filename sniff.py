@@ -15,9 +15,12 @@ def snif(pkt):
     global nm
     clr=["green", "yellow"]
     nm+=1
-    ip_src=pkt[IP].src
-    ip_dst=pkt[IP].dst
-    prt=pkt[IP].proto
+    if pkt.haslayer(IP):
+        ip_src=pkt[IP].src
+        ip_dst=pkt[IP].dst
+        prt=pkt[IP].proto
+    else:
+        ip_src=ip_dst=prt="0.0.0.0"
     mac_src=pkt[Ether].src
     mac_dst=pkt[Ether].dst
     if pkt.haslayer(TCP):
