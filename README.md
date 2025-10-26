@@ -1,4 +1,3 @@
-# CodeAlpha_PKT-SNIFF
 # sniff.py - Packet Sniffer
 
 `sniff.py` is a Python script that enables network packet sniffing using the Scapy library. It captures and analyzes network traffic by inspecting Ethernet, IP, and transport-layer protocols. The output displays essential details such as source/destination IP, MAC addresses, protocol type, and port numbers for TCP/UDP packets.
